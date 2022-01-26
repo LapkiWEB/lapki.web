@@ -1,43 +1,31 @@
-
-// УБЕРИ SANS-SERIF ОН МОЖЕТ ЛОМАТЬ ШРИФТ
-
-// @font-face {
-//   font-family: 'AnonymousPro-Regular';
-//   src: url('../fonts/AnonymousPro-Regular.eot');
-//   src: local('☺'),
-//     url('../fonts/AnonymousPro-Regular.woff') format('woff'),
-//     url('../fonts/AnonymousPro-Regular.ttf') format('truetype'),
-//     url('../fonts/AnonymousPro-Regular.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'AnonymousPro-Bold';
-//   src: url('../fonts/AnonymousPro-Bold.eot');
-//   src: local('☺'),
-//     url('../fonts/AnonymousPro-Bold.woff') format('woff'),
-//     url('../fonts/AnonymousPro-Bold.ttf') format('truetype'),
-//     url('../fonts/AnonymousPro-Bold.svg') format('svg');
-//   font-weight: 700;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'AlegreyaSC-Bold';
-//   src: url('../fonts/AlegreyaSC-Bold.eot');
-//   src: local('☺'),
-//     url('../fonts/AlegreyaSC-Bold.woff') format('woff'),
-//     url('../fonts/AlegreyaSC-Bold.ttf') format('truetype'),
-//     url('../fonts/AlegreyaSC-Bold.svg') format('svg');
-//   font-weight: 700;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'AlegreyaSC-Regular';
-//   src: url('../fonts/AlegreyaSC-Regular.eot');
-//   src: local('☺'),
-//     url('../fonts/AlegreyaSC-Regular.woff') format('woff'),
-//     url('../fonts/AlegreyaSC-Regular.ttf') format('truetype'),
-//     url('../fonts/AlegreyaSC-Regular.svg') format('svg');
-//   font-weight: 400;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'AnticDidone-Regular';
+  src: url('../fonts/AnticDidone-Regular.eot');
+  src: local('☺'),
+       url('../fonts/AnticDidone-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/AnticDidone-Regular.otf') format('otf'),
+       url('../fonts/AnticDidone-Regular.svg#AnticDidone-Regular') format('svg'),
+       url('../fonts/AnticDidone-Regular.ttf') format('truetype'),
+       url('../fonts/AnticDidone-Regular.woff') format('woff')
+       url('../fonts/AnticDidone-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arsenal-Regular';
+  src: url('../fonts/Arsenal-Regular.eot');
+  src: url('../fonts/Arsenal-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arsenal-Regular.otf') format('otf'),
+    url('../fonts/Arsenal-Regular.svg#Arsenal-Regular') format('svg'),
+    url('../fonts/Arsenal-Regular.ttf') format('truetype'),
+    url('../fonts/Arsenal-Regular.woff') format('woff'),
+    url('../fonts/Arsenal-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Arsenal-Bold';
+  src: url('../fonts/Arsenal-Bold.eot');
+  src: url('../fonts/Arsenal-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arsenal-Bold.otf') format('otf'),
+    url('../fonts/Arsenal-Bold.svg#Arsenal-Bold') format('svg'),
+    url('../fonts/Arsenal-Bold.ttf') format('truetype'),
+    url('../fonts/Arsenal-Bold.woff') format('woff'),
+    url('../fonts/Arsenal-Bold.woff2') format('woff2');
+}
