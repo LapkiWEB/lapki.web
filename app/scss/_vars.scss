@@ -9,15 +9,25 @@
   font-weight: 700;
   display: swap;
 }
-
 %Antic-Regular {
-  font-family: 'AnticDidone-Regular', sans-serif;
+  font-family: 'Conv_AnticDidone-Regular', sans-serif;
   font-weight: 400;
   display: swap;
 }
 
+@mixin form-style--btn {
+  background: linear-gradient(180deg, #FFD41F 0%, #FF7B9B 100%);
+}
 
-// $blue: #ABD0D3;
-// $text: #F2F1ED;
-// $background: #3B3B3B;
-// $line: #BCB3A9;
+
+@mixin form-style--text {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
+}
+
+$dark-grey: #292929;
+$grey: #BEBEBE;
+$light-grey: #F3F3F3;
+$white: #ffffff;

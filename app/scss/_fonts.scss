@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'AnticDidone-Regular';
+  font-family: 'Conv_AnticDidone-Regular';
   src: url('../fonts/AnticDidone-Regular.eot');
   src: local('☺'),
-       url('../fonts/AnticDidone-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/AnticDidone-Regular.otf') format('otf'),
-       url('../fonts/AnticDidone-Regular.svg#AnticDidone-Regular') format('svg'),
-       url('../fonts/AnticDidone-Regular.ttf') format('truetype'),
-       url('../fonts/AnticDidone-Regular.woff') format('woff')
-       url('../fonts/AnticDidone-Regular.woff2') format('woff2');
+    url('../fonts/AnticDidone-Regular.woff') format('woff'),
+    url('../fonts/AnticDidone-Regular.ttf') format('truetype'),
+    url('../fonts/AnticDidone-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
   font-family: 'Arsenal-Regular';
   src: url('../fonts/Arsenal-Regular.eot');
@@ -19,6 +19,7 @@
     url('../fonts/Arsenal-Regular.woff') format('woff'),
     url('../fonts/Arsenal-Regular.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Arsenal-Bold';
   src: url('../fonts/Arsenal-Bold.eot');

@@ -1,3 +1,210 @@
-// @media(max-width: 1900px){
+@media(max-width: 1280px) {
+  .header {
+    padding: 40px 70px;
 
-// }
+    &.active {
+      padding: 35px 85px 35px 70px;
+    }
+  }
+
+
+  .menu__item {
+    padding: 20px 30px 0px;
+  }
+
+  .screen__menu-btn,
+  .screen__contacts {
+    right: 70px;
+  }
+
+  .screen__logo {
+    left: 70px;
+  }
+
+  .screen__box {
+    left: 35px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .menu__list-link--pc {
+    display: none;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .menu__item {
+    padding: 20px 50px 0px;
+  }
+
+  .header {
+    &.active {
+      overflow: auto;
+      padding: 40px 70px;
+    }
+  }
+}
+
+@media(max-width: 850px) {
+  .header__fixed {
+    padding: 20px 70px;
+  }
+
+  .screen__item-left {
+    display: none;
+  }
+
+  .screen__subtitle {
+    margin-bottom: 10px;
+  }
+
+  .screen__item-right {
+    width: 100%;
+  }
+
+  .screen__logo-pc {
+    display: none;
+  }
+
+  .screen__logo-mobil {
+    display: block;
+  }
+
+  .screen__contacts {
+    bottom: 137px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .screen__box {
+    width: 100%;
+    margin: 0 auto;
+    left: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .screen__company-name--inner {
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    left: auto;
+  }
+
+  .screen__company-name {
+    font-size: calc(60px + (87 + 87 * 0.7) * ((100vw - 320px) / 850));
+    line-height: calc(75px + (57 + 57 * 0.7) * ((100vw - 320px) / 850));
+
+    span {
+      color: $dark-grey;
+    }
+  }
+
+  .screen__img {
+    width: 265px;
+    height: 588px;
+  }
+  .menu__item{
+    width: 350px;
+  }
+  .menu__list-main--link{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .menu__list-link--phone,
+  .menu__list-link--gmail {
+    &::before {
+      top: 7px;
+    }
+  }
+}
+// ВЕРТИКАЛЬ!!!!!!
+@media(max-height: 830px) {
+  .header.active{
+    overflow: auto;
+  }
+}
+@media(max-height: 770px) {
+  .screen__img {
+    width: 180px;
+    height: 399px;
+  }
+}
+
+@media(max-height: 710px) {
+  .screen__img {
+    width: 160px;
+    height: 356px;
+  }
+}
+
+@media(max-height: 650px) {
+  .screen__img {
+    display: none;
+  }
+
+  .screen__box {
+    top: 100px;
+  }
+
+  .screen__contacts {
+    display: none;
+  }
+
+  .screen__company-name--inner {
+    display: none;
+  }
+}
+
+// ВЕРТИКАЛЬ ! ! ! ! ! !
+@media(max-width: 600px) {
+  .header__fixed {
+    padding: 20px 40px;
+  }
+
+  .logo,
+  .screen__logo {
+    width: 40px;
+    height: 35px;
+    left: 40px;
+    top: 25px;
+  }
+
+  .screen__menu-btn {
+    right: 40px;
+    top: 29px;
+  }
+
+  .screen__contacts {
+    right: 40px;
+    bottom: 110px;
+  }
+
+  .header {
+    &.active {
+      padding: 25px 40px;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .screen__contacts {
+    display: none;
+  }
+
+  .screen__img {
+    width: 180px;
+    height: 400px;
+  }
+
+  .screen,
+  .screen__item-inner {
+    height: 93vh;
+  }
+  .menu__item{
+    padding: 20px 0 0px;
+    width: 250px;
+  }
+}
