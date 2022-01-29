@@ -337,6 +337,59 @@
 
 // end section screen
 
+// start section benefits
+.benefits{
+  background-color: $light-grey;
+  padding: 50px 0;
+  // background-image: url('../images/content/logo__bg-section--benefits.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.benefits__wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.benefits__item{
+  padding: 30px 20px;
+  max-width: 430px;
+  width: 100%;
+  min-height: 230px;
+  text-align: center;
+  color: $dark-grey;
+  @include form-style--border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.benefits__item-title{
+  @extend %Arsenal-Regular;
+  margin-bottom: 14px;
+  font-size: 30px;
+  line-height: 38px;
+}
+.benefits__item-number{
+  position: absolute;
+  top: -31px;
+  left: -11px;
+  font-size: 40px;
+  line-height: 60px;
+  @include form-style--text;
+}
+.benefits__inner{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+// end section benefits
 
 
 

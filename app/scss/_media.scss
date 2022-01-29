@@ -51,6 +51,9 @@
   .header__fixed {
     padding: 20px 70px;
   }
+  .menu.active{
+    padding-top: 10px;
+  }
 
   .screen__item-left {
     display: none;
@@ -118,6 +121,10 @@
     &::before {
       top: 7px;
     }
+  }
+  .benefits__item-title{
+    font-size: 26px;
+    line-height: 30px;
   }
 }
 // ВЕРТИКАЛЬ!!!!!!

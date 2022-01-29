@@ -31,11 +31,14 @@ body {
 
 .title {
   @extend %Arsenal-Regular;
-  font-size: 64px;
-  line-height: 80px;
+  // font-size: 64px;
+  // line-height: 80px;
   color: $grey;
   margin-bottom: 30px;
   max-width: fit-content;
+  text-transform: uppercase;
+  font-size: calc(54px + 18 * ((100vw - 1920px) / (1920 - 320)));
+  line-height: calc(75px + 40 * ((100vw - 1920px) / (1920 - 320)));
 }
 
 .main-btn {
@@ -48,8 +51,4 @@ body {
   @extend %Arsenal-Regular;
   font-size: 20px;
   line-height: 25px;
-  // &:hover{
-  //   background: linear-gradient(0deg, #FFD41F 0%, #FF7B9B 100%);
-  // }
-
 }
