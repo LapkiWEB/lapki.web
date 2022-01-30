@@ -1,3 +1,11 @@
+@media(max-width: 1400px) {
+  .services__img {
+    width: 446px;
+    height: 428px;
+  }
+}
+
+
 @media(max-width: 1280px) {
   .header {
     padding: 40px 70px;
@@ -6,7 +14,6 @@
       padding: 35px 85px 35px 70px;
     }
   }
-
 
   .menu__item {
     padding: 20px 30px 0px;
@@ -28,6 +35,14 @@
   .gallery__item-img {
     width: 536px;
     height: 424px;
+  }
+
+  .services__wrapper {
+    max-width: 600px;
+  }
+
+  .services__item.main-btn {
+    padding: 25px 40px;
   }
 }
 
@@ -67,6 +82,29 @@
   .gallery__item-img--left {
     order: 1;
   }
+
+  .services__img {
+    width: 333px;
+    height: 320px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .services__img {
+    display: none;
+  }
+
+  .services__wrapper {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .services__inner {
+    width: 100%;
+  }
+
 }
 
 @media(max-width: 850px) {
@@ -104,6 +142,11 @@
     line-height: 25px;
   }
 
+  .subtitle{
+    font-size: 20px;
+    line-height: 25px;
+  }
+ 
   .screen__box {
     width: 100%;
     margin: 0 auto;
@@ -153,6 +196,17 @@
     font-size: 26px;
     line-height: 30px;
   }
+  .footer{
+    padding-bottom: 170px;
+  }
+  .footer__bg{
+    display: none;
+  }
+  .footer__img{
+    width: 478px;
+    height: 163px;
+    margin-left: -239px;
+  }
 }
 
 // ВЕРТИКАЛЬ!!!!!!
@@ -201,7 +255,8 @@
     width: 394px;
     height: 312px;
   }
-  .gallery__item{
+
+  .gallery__item {
     padding: 0 0 20px;
   }
 }
@@ -235,6 +290,7 @@
     }
   }
 }
+
 @media(max-width: 500px) {
   .screen__contacts {
     display: none;
@@ -254,11 +310,38 @@
     padding: 20px 0 0px;
     width: 250px;
   }
-  .gallery__item-img{
+
+  .gallery__item-img {
     width: 318px;
     height: 252px;
   }
+  .services__item-box{
+    flex-wrap: wrap;
+    justify-content: center;
+     text-align: center;
+  }
+  .services__item-text{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .services__item-price{
+    display: block;
+    width: 100%;
+  }
+  .services__item.main-btn{
+    padding: 20px;
+  }
+  .footer {
+    padding-bottom: 110px;
+  }
+  .footer__img {
+    width: 290px;
+    height: 99px;
+    margin-left: -145px;
+  }
 }
+
 @media(max-width: 380px) {
   .gallery__item-img {
     width: 265px;

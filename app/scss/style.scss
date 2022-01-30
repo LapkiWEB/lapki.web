@@ -131,17 +131,11 @@
 
 
 .menu__list-link {
-  @extend %Arsenal-Regular;
-  font-size: 18px;
-  line-height: 23px;
   color: $grey;
   margin-bottom: 20px;
 }
 
 .menu__list-main--link {
-  @extend %Arsenal-Regular;
-  font-size: 24px;
-  line-height: 30px;
   color: $white;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -273,9 +267,9 @@
 }
 
 .screen__item-right {
-  background-color: #fff;
   width: 56.7%;
   height: 100%;
+  background-color: $light-grey;
 }
 
 .screen__item-inner {
@@ -349,7 +343,9 @@
   background-size: cover;
   background-position: center;
 }
-
+.benefits__title{
+  margin-bottom: 50px;
+}
 .benefits__wrapper {
   display: flex;
   justify-content: space-around;
@@ -419,8 +415,6 @@
 }
 
 .gallery__text {
-  // font-size: 20px;
-  // line-height: 25px;
   color: $light-grey;
   margin-bottom: 20px;
 }
@@ -465,7 +459,6 @@
   margin-bottom: 30px;
   color: $light-grey;
 }
-
 .gallery__inner {
   display: flex;
   justify-content: center;
@@ -481,9 +474,122 @@
 
 // end section gallery
 
+// start section services
+
+.services {
+  background-color: $light-grey;
+  position: relative;
+}
+
+.services__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 607px;
+  height: 584px;
+}
+
+.services__text {
+  margin-bottom: 30px;
+}
+
+.services__wrapper {
+  max-width: 750px;
+}
+
+.services__item {
+  max-width: 746px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  &.main-btn {
+    padding: 37px 59px;
+  }
+
+  &::before {
+    background-color: $light-grey;
+  }
+}
+
+.services__item:hover::before {
+  background-color: $white;
+}
+
+.services__item-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: $dark-grey;
+  font-size: 24px;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+.services__item-text {
+  text-transform: uppercase;
+}
+
+.services__inner {
+  display: flex;
+  justify-content: center;
+}
+
+// end section services
+
+
+// start footer
+
+.footer{
+  background-color: $dark-grey;
+  padding-top: 50px;
+  padding-bottom: 310px;
+  position: relative;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
+  border-image-slice: 1 0 0 0;
+}
+.footer__wrapper{
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+
+.footer__img{
+  position: absolute;
+  width: 739px;
+  height: 252px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -369px;
+  z-index: 10;
+}
+.footer__bg{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// end footer
 
 
 @import 'media';

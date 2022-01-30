@@ -27,9 +27,10 @@ body {
   padding: 0 15px;
 }
 
-.section{
+.section {
   padding: 50px 0;
 }
+
 .title {
   @extend %Arsenal-Regular;
   color: $grey;
@@ -37,25 +38,32 @@ body {
   text-transform: uppercase;
   font-size: calc(54px + 18 * ((100vw - 1920px) / (1920 - 320)));
   line-height: calc(75px + 40 * ((100vw - 1920px) / (1920 - 320)));
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  @extend %Arsenal-Regular;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .main-btn {
+  @extend %Arsenal-Regular;
+  font-size: 20px;
+  line-height: 25px;
   max-width: fit-content;
   padding: 10px 40px;
   @include form-style--btn;
   box-shadow: -7px -4px 4px rgba(255, 255, 255, 0.25),
     4px 4px 4px rgba(41, 41, 41, 0.25);
   border-radius: 5px;
-  @extend %Arsenal-Regular;
-  font-size: 20px;
-  line-height: 25px;
 }
 
-.main__border-btn {
+.main__border-wrapper {
   box-shadow: none;
   color: $light-grey;
   position: relative;
+
   &::before {
     content: '';
     position: absolute;
@@ -68,6 +76,6 @@ body {
   }
 }
 
-.main__border-text {
+.main__border-box {
   position: relative;
 }
