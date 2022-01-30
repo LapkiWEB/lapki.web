@@ -24,6 +24,11 @@
   .screen__box {
     left: 35px;
   }
+
+  .gallery__item-img {
+    width: 536px;
+    height: 424px;
+  }
 }
 
 @media(max-width: 1100px) {
@@ -45,13 +50,31 @@
       padding: 40px 70px;
     }
   }
+
+  .gallery__wrapper {
+    margin-bottom: 30px;
+  }
+
+  .gallery__item {
+    flex-wrap: wrap;
+    padding: 0px 45px 36px;
+  }
+
+  .gallery__item-img {
+    margin: 0 auto;
+  }
+
+  .gallery__item-img--left {
+    order: 1;
+  }
 }
 
 @media(max-width: 850px) {
   .header__fixed {
     padding: 20px 70px;
   }
-  .menu.active{
+
+  .menu.active {
     padding-top: 10px;
   }
 
@@ -109,30 +132,36 @@
     width: 265px;
     height: 588px;
   }
-  .menu__item{
+
+  .menu__item {
     width: 350px;
   }
-  .menu__list-main--link{
+
+  .menu__list-main--link {
     font-size: 20px;
     line-height: 22px;
   }
+
   .menu__list-link--phone,
   .menu__list-link--gmail {
     &::before {
       top: 7px;
     }
   }
-  .benefits__item-title{
+
+  .benefits__item-title {
     font-size: 26px;
     line-height: 30px;
   }
 }
+
 // ВЕРТИКАЛЬ!!!!!!
 @media(max-height: 830px) {
-  .header.active{
+  .header.active {
     overflow: auto;
   }
 }
+
 @media(max-height: 770px) {
   .screen__img {
     width: 180px;
@@ -166,6 +195,17 @@
 }
 
 // ВЕРТИКАЛЬ ! ! ! ! ! !
+
+@media(max-width: 700px) {
+  .gallery__item-img {
+    width: 394px;
+    height: 312px;
+  }
+  .gallery__item{
+    padding: 0 0 20px;
+  }
+}
+
 @media(max-width: 600px) {
   .header__fixed {
     padding: 20px 40px;
@@ -195,7 +235,6 @@
     }
   }
 }
-
 @media(max-width: 500px) {
   .screen__contacts {
     display: none;
@@ -210,8 +249,19 @@
   .screen__item-inner {
     height: 93vh;
   }
-  .menu__item{
+
+  .menu__item {
     padding: 20px 0 0px;
     width: 250px;
+  }
+  .gallery__item-img{
+    width: 318px;
+    height: 252px;
+  }
+}
+@media(max-width: 380px) {
+  .gallery__item-img {
+    width: 265px;
+    height: 210px;
   }
 }

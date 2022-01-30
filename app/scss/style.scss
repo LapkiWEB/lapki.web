@@ -11,11 +11,13 @@
   left: 0;
   width: 100%;
   position: fixed;
+
   &.active {
     z-index: 100;
     height: 100%;
     backdrop-filter: blur(20px);
     padding: 40px 110px 40px 95px;
+
     .row1 {
       transform: rotate(45deg);
       position: relative;
@@ -23,6 +25,7 @@
       background-color: $white;
       transition: all .5s ease 0s;
     }
+
     .row2 {
       transform: rotate(-45deg);
       position: relative;
@@ -30,11 +33,13 @@
       background-color: $white;
       transition: all .5s ease 0s;
     }
+
     .row3 {
       display: none;
     }
   }
 }
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -198,13 +203,13 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+
 }
 
 .screen__logo {
   position: absolute;
   top: 40px;
   left: 95px;
-  // z-index: 100;
   z-index: 11;
   width: 60.72px;
   height: 53px;
@@ -338,20 +343,20 @@
 // end section screen
 
 // start section benefits
-.benefits{
+.benefits {
   background-color: $light-grey;
-  padding: 50px 0;
-  // background-image: url('../images/content/logo__bg-section--benefits.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.benefits__wrapper{
+
+.benefits__wrapper {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.benefits__item{
+
+.benefits__item {
   padding: 30px 20px;
   max-width: 430px;
   width: 100%;
@@ -368,13 +373,16 @@
   margin-bottom: 50px;
   position: relative;
 }
-.benefits__item-title{
+
+.benefits__item-title {
   @extend %Arsenal-Regular;
   margin-bottom: 14px;
   font-size: 30px;
   line-height: 38px;
+
 }
-.benefits__item-number{
+
+.benefits__item-number {
   position: absolute;
   top: -31px;
   left: -11px;
@@ -382,7 +390,13 @@
   line-height: 60px;
   @include form-style--text;
 }
-.benefits__inner{
+
+.benefits__item-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.benefits__inner {
   display: flex;
   justify-content: center;
 }
@@ -390,6 +404,82 @@
 
 
 // end section benefits
+// start section gallery
+
+.gallery {
+  background-color: $dark-grey;
+}
+
+.gallery__title {
+  @include form-style--text;
+}
+
+.gallery__wrapper {
+  margin-bottom: 80px;
+}
+
+.gallery__text {
+  // font-size: 20px;
+  // line-height: 25px;
+  color: $light-grey;
+  margin-bottom: 20px;
+}
+
+.gallery__item {
+  padding: 36px 45px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  margin-bottom: 50px;
+
+  &:hover {
+    @include form-style--border;
+  }
+}
+
+.gallery__item-img {
+  width: 767px;
+  height: 606px;
+}
+
+.gallery__item-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.gallery__item-box {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery__item-box--title {
+  font-size: 36px;
+  line-height: 45px;
+  @include form-style--text;
+  margin-bottom: 30px;
+}
+
+.gallery__item-box--text {
+  margin-bottom: 30px;
+  color: $light-grey;
+}
+
+.gallery__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__btn {
+  box-shadow: none;
+}
+
+.gallery__item-img--right {
+  order: 1;
+}
+
+// end section gallery
 
 
 
