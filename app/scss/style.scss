@@ -241,7 +241,6 @@
   background-color: $dark-grey;
   width: 43.3%;
   height: 100%;
-  background-image: url('../images/content/logo__bg-section.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -343,9 +342,11 @@
   background-size: cover;
   background-position: center;
 }
-.benefits__title{
+
+.benefits__title {
   margin-bottom: 50px;
 }
+
 .benefits__wrapper {
   display: flex;
   justify-content: space-around;
@@ -459,6 +460,7 @@
   margin-bottom: 30px;
   color: $light-grey;
 }
+
 .gallery__inner {
   display: flex;
   justify-content: center;
@@ -538,10 +540,108 @@
 
 // end section services
 
+// start section request
+
+.request {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $light-grey;
+}
+
+.request__wrapper{
+  display: flex;
+  justify-content: space-between;
+  min-height: 170px;
+  margin-bottom: 50px;
+}
+.request__inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: space-between;
+}
+
+.request__item {
+  border: 1px solid $dark-grey;
+  border-radius: 10px;
+  padding: 20px 25px;
+  max-width: 655px;
+  width: 100%;
+  margin-right: 20px;
+
+  &::placeholder {
+    color: $grey;
+  }
+}
+
+.request__item-text {
+  border: 1px solid $dark-grey;
+  border-radius: 10px;
+  padding: 20px 25px;
+  max-width: 655px;
+  width: 100%;
+  resize: none;
+
+  &::placeholder {
+    color: $grey;
+  }
+}
+
+.request__inner-btn{
+  display: flex;
+  justify-content: center;
+ 
+}
+.request__btn{
+  border: none;
+   cursor: pointer;
+}
+
+
+
+
+// end section request
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // start footer
 
-.footer{
+.footer {
   background-color: $dark-grey;
   padding-top: 50px;
   padding-bottom: 310px;
@@ -550,7 +650,8 @@
   border-image: linear-gradient(to right, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
   border-image-slice: 1 0 0 0;
 }
-.footer__wrapper{
+
+.footer__wrapper {
   padding: 0 15px;
   display: flex;
   justify-content: center;
@@ -559,7 +660,7 @@
   z-index: 10;
 }
 
-.footer__img{
+.footer__img {
   position: absolute;
   width: 739px;
   height: 252px;
@@ -568,7 +669,8 @@
   margin-left: -369px;
   z-index: 10;
 }
-.footer__bg{
+
+.footer__bg {
   position: absolute;
   bottom: 0;
   text-align: center;

@@ -196,6 +196,17 @@
     font-size: 26px;
     line-height: 30px;
   }
+  .request__wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .request__inner{
+    justify-content: center;
+  }
+  .request__item{
+    margin:0 0 20px;
+  }
+
   .footer{
     padding-bottom: 170px;
   }

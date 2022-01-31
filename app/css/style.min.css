@@ -450,7 +450,6 @@ body {
   background-color: #292929;
   width: 43.3%;
   height: 100%;
-  background-image: url("../images/content/logo__bg-section.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -794,6 +793,97 @@ body {
           justify-content: center;
 }
 
+.request {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #F3F3F3;
+}
+
+.request__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 170px;
+  margin-bottom: 50px;
+}
+
+.request__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.request__item {
+  border: 1px solid #292929;
+  border-radius: 10px;
+  padding: 20px 25px;
+  max-width: 655px;
+  width: 100%;
+  margin-right: 20px;
+}
+.request__item::-webkit-input-placeholder {
+  color: #BEBEBE;
+}
+.request__item::-moz-placeholder {
+  color: #BEBEBE;
+}
+.request__item:-ms-input-placeholder {
+  color: #BEBEBE;
+}
+.request__item::-ms-input-placeholder {
+  color: #BEBEBE;
+}
+.request__item::placeholder {
+  color: #BEBEBE;
+}
+
+.request__item-text {
+  border: 1px solid #292929;
+  border-radius: 10px;
+  padding: 20px 25px;
+  max-width: 655px;
+  width: 100%;
+  resize: none;
+}
+.request__item-text::-webkit-input-placeholder {
+  color: #BEBEBE;
+}
+.request__item-text::-moz-placeholder {
+  color: #BEBEBE;
+}
+.request__item-text:-ms-input-placeholder {
+  color: #BEBEBE;
+}
+.request__item-text::-ms-input-placeholder {
+  color: #BEBEBE;
+}
+.request__item-text::placeholder {
+  color: #BEBEBE;
+}
+
+.request__inner-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.request__btn {
+  border: none;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #292929;
   padding-top: 50px;
@@ -1035,6 +1125,24 @@ body {
   .benefits__item-title {
     font-size: 26px;
     line-height: 30px;
+  }
+
+  .request__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .request__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .request__item {
+    margin: 0 0 20px;
   }
 
   .footer {
