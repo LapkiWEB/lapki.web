@@ -32,4 +32,22 @@ $(function () {
     }
   }));
 
+
+  $('.slider__wrapper').slick({
+    dots: true,
+    dotsClass: 'slick-dots',
+    infinite: true,
+    speed: 500,
+    // fade: true,
+    arrows: false,
+    // cssEase: 'linear',
+    // responsive: [{
+    //     breakpoint: 551,
+    //     settings: {
+    //       dots: false
+    //     }
+    //   }
+    // ]
+  });
+
 })

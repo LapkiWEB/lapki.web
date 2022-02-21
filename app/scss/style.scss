@@ -549,12 +549,13 @@
   background-color: $light-grey;
 }
 
-.request__wrapper{
+.request__wrapper {
   display: flex;
   justify-content: space-between;
   min-height: 170px;
   margin-bottom: 50px;
 }
+
 .request__inner {
   display: flex;
   flex-wrap: wrap;
@@ -588,14 +589,15 @@
   }
 }
 
-.request__inner-btn{
+.request__inner-btn {
   display: flex;
   justify-content: center;
- 
+
 }
-.request__btn{
+
+.request__btn {
   border: none;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 
@@ -604,7 +606,137 @@
 // end section request
 
 
+// start section reviews
 
+.reviews {
+  background-color: $dark-grey;
+  color: $light-grey;
+}
+
+.reviews__title {
+  @include form-style--text;
+}
+
+.reviews__bg {
+  padding: 0;
+  max-width: 100%;
+}
+
+.reviews__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  position: relative;
+}
+.reviews__item-name{
+  text-transform: uppercase;
+}
+.reviews__item-name--company {
+  text-transform: uppercase;
+  color: $grey;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.reviews__item-text {
+  max-width: 730px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+
+
+.reviews__item-text {
+  margin-bottom: 30px;
+}
+
+.reviews__item-grade-list {
+  display: inline-block;
+
+  &+.reviews__item-grade-list {
+    margin-left: 10px;
+  }
+}
+
+.reviews__box {
+  min-width: 330px;
+  max-width: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  height: 270px;
+}
+
+.reviews__items {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.reviews__site,
+.reviews__inst {
+  padding: 10px 10px 10px 50px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.reviews__site {
+  &::before {
+    background-image: url('../images/icons/web.png');
+  }
+}
+
+.reviews__inst {
+  &::before {
+    background-image: url('../images/icons/instagram.png');
+  }
+}
+
+.reviews__yandex,
+.reviews__google {
+  padding: 10px 10px 10px 64px;
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.reviews__yandex {
+  &::before {
+    background-image: url('../images/icons/yandex.png');
+  }
+}
+
+.reviews__google {
+  &::before {
+    background-image: url('../images/icons/google.png');
+  }
+}
+
+// end section reviews
 
 
 
