@@ -248,8 +248,10 @@
                 <h2 class="screen__subtitle">
                   Под вашего клиента
                 </h2>
-                <a class="screen__btn main-btn" href="#">
-                  Написать нам
+                <a class="screen__btn main-btn hover-btn" href="#">
+                  <div class="main__border-box">
+                    Написать нам
+                  </div>
                 </a>
               </div>
             </div>
@@ -367,12 +369,17 @@
 
           </div>
           <div class="benefits__inner">
-            <a class="benefits__btn main-btn" href=#>
-              Написать нам
+            <a class="benefits__btn main-btn hover-btn" href="#">
+              <div class="main__border-box">
+                Написать нам
+              </div>
             </a>
           </div>
         </div>
       </section>
+
+      
+
 
       <section class="gallery section">
         <div class="container">
@@ -381,19 +388,16 @@
           </h2>
           <div class="gallery__wrapper">
             <p class="gallery__text">
-              Невозможно создать уникальный проект, если вам предлагают разработать сайт на конструкторе или
-              использовать
-              шаблоны.
-              <br>
-              Вы всегда будете упираться в ограничение и в особенности каждой платформы.
-            </p>
-            <p class="gallery__text">
               Мы создаем эксклюзивные, авторские сайты с первой строчки кода до подписания акта сдачи. <br>
               Все наши проекты – это результат взаимодействия нашей команды с клиентом. Создавая новый сайт, мы
               вдохновляемся идеей
               заказчика и особенностью его бизнеса.
             </p>
           </div>
+
+
+
+
           <a class="gallery__item" href="#">
             <img class="gallery__item-img gallery__item-img--left" src="images/content/gallery-img-1.png" alt="">
             <div class="gallery__item-wrapper">
@@ -415,6 +419,10 @@
                 </div>
               </div>
             </div>
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+            <span class="four"></span>
           </a>
 
           <a class="gallery__item" href="#">
@@ -439,6 +447,10 @@
                 </div>
               </div>
             </div>
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+            <span class="four"></span>
           </a>
 
           <a class="gallery__item" href="#">
@@ -461,11 +473,17 @@
                 </div>
               </div>
             </div>
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+            <span class="four"></span>
           </a>
           <div class="gallery__inner">
-            <a class="gallery__btn main-btn" href="#">
-              Больше работ
-            </a>
+            <div class="main__border-wrapper main-btn">
+              <div class="main__border-box">
+                Больше работ
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -529,13 +547,57 @@
               </div>
             </a>
             <div class="services__inner">
-              <a class="services__btn main-btn" href="#">
-                Написать нам
+              <a class="services__btn main-btn hover-btn" href="#">
+                <div class="main__border-box">
+                  Написать нам
+                </div>
               </a>
             </div>
           </div>
         </div>
       </section>
+
+
+      <section class="treaty section">
+        <div class="container">
+          <div class="treaty__title title">
+            ВСЕ ОБЯЗАТЕЛЬСТВА В ДОГОВОРЕ
+          </div>
+          <div class="treaty__wrapper">
+            <div class="treaty__item">
+
+              <img class="treaty__item-img" src="images/content/treaty__img.png" alt="">
+
+            </div>
+            <div class="treaty__item">
+              <div class="treaty__subtitle subtitle">
+                <span>ЧЕРНЫМ ПО БЕЛОМУ</span>ПРОПИСЫВАЕМ И СОБЛЮДАЕМ:
+              </div>
+              <ul class="treaty__box">
+                <li class="treaty__list">Обязательства сторон
+                </li>
+                <li class="treaty__list">Подробное описание технического задания
+                </li>
+                <li class="treaty__list">Сроки и этапы работ
+                </li>
+                <li class="treaty__list">Фиксированная стоимость этапов
+                </li>
+                <li class="treaty__list">Ответственное лицо
+                </li>
+                <li class="treaty__list">Гарантии
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
 
 
       <section class="reviews section">
@@ -775,11 +837,6 @@
       </section>
 
 
-
-
-
-
-
       <section class="request section" style="background-image: url('images/content/logo__bg-section.png');">
         <div class="container">
           <h2 class="request__title title">
@@ -794,8 +851,8 @@
               <textarea class="request__item-text" name="text" placeholder="Сообщение..."></textarea>
             </div>
             <div class="request__inner-btn">
-              <button class="request__btn main-btn">
-                Отправить
+              <button class="request__btn main-btn hover-btn">
+                <span class="main__border-box">Отправить</span> 
               </button>
             </div>
           </form>

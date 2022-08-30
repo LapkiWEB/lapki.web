@@ -21,7 +21,8 @@
     .row1 {
       transform: rotate(45deg);
       position: relative;
-      top: 5px;
+      top: 1px;
+      left: 9px;
       background-color: $white;
       transition: all .5s ease 0s;
     }
@@ -29,7 +30,8 @@
     .row2 {
       transform: rotate(-45deg);
       position: relative;
-      top: -3px;
+      top: -7px;
+      left: 9px;
       background-color: $white;
       transition: all .5s ease 0s;
     }
@@ -72,15 +74,32 @@
 }
 
 .header__fixed {
-  padding: 20px 95px;
+  padding: 12px 95px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(29, 29, 29, 0.8);
+  background-color: rgba(29, 29, 29, 0.90);
   animation-name: show_header;
   animation-duration: 1s;
   z-index: 100;
+}
+
+.header.header__fixed.active {
+  padding-top: 12px;
+   .row1 {
+
+     top: 4px;
+     left: 9px;
+ 
+   }
+
+   .row2 {
+
+     top: -4px;
+     left: 9px;
+
+   }
 }
 
 @keyframes show_header {
@@ -287,7 +306,7 @@
 .screen__box {
   position: absolute;
   top: 136px;
-  left: 95px;
+  left: 85px;
   z-index: 5;
 }
 
@@ -426,9 +445,60 @@
   justify-content: space-between;
   border: 1px solid transparent;
   margin-bottom: 50px;
+  position: relative;
+  span {
+    position: absolute;
+    transition: .5s
+  }
+  .one {
+    background: linear-gradient(180deg, #FFD41F 0%, #FF7B9B 100%);
+    height: 0;
+    width: 1px;
+    top: 0;
+    left: 0;
+  }
+
+  .two {
+    background: #FF7B9B;
+    height: 1px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .three {
+    background: linear-gradient(180deg, #FFD41F 0%, #FF7B9B 100%);
+    height: 0;
+    width: 1px;
+    bottom: 0;
+    right: 0
+  }
+
+  .four {
+    background: #FFD41F;
+    height: 1px;
+    width: 0;
+    top: 0;
+    right: 0;
+  }
 
   &:hover {
-    @include form-style--border;
+    // .main__border-wrapper {
+    //   color: $dark-grey;
+    //   &::before{
+        
+    //     background: linear-gradient(180deg, #FFD41F 0%, #FF7B9B 100%);
+    //   }
+    // }
+    .one,
+    .three {
+      height: 100%;
+    }
+
+    .two,
+    .four {
+      width: 100%;
+    }
   }
 }
 
@@ -539,73 +609,65 @@
 }
 
 // end section services
+// start section treaty
 
-// start section request
-
-.request {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: $light-grey;
+.treaty {
+  background-color: $dark-grey;
+  color: $light-grey;
+  font-size: 20px;
+  line-height: 25px;
 }
 
-.request__wrapper {
-  display: flex;
-  justify-content: space-between;
-  min-height: 170px;
+.treaty__title {
+  @include form-style--text;
   margin-bottom: 50px;
 }
 
-.request__inner {
+.treaty__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.request__item {
-  border: 1px solid $dark-grey;
-  border-radius: 10px;
-  padding: 20px 25px;
-  max-width: 655px;
-  width: 100%;
-  margin-right: 20px;
+.treaty__subtitle {
+  padding-top: 12px;
+  margin-bottom: 50px;
 
-  &::placeholder {
-    color: $grey;
+  span {
+    background-color: #fff;
+    padding: 12px 15px;
+    border-radius: 3px;
+    color: #000;
+    margin-right: 15px;
+  }
+
+}
+
+.treaty__item-img {
+  width: 513px;
+  height: 405px;
+}
+
+.treaty__list {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    background-image: url('../images/icons/list-style.png');
   }
 }
 
-.request__item-text {
-  border: 1px solid $dark-grey;
-  border-radius: 10px;
-  padding: 20px 25px;
-  max-width: 655px;
-  width: 100%;
-  resize: none;
-
-  &::placeholder {
-    color: $grey;
-  }
-}
-
-.request__inner-btn {
-  display: flex;
-  justify-content: center;
-
-}
-
-.request__btn {
-  border: none;
-  cursor: pointer;
-}
 
 
 
-
-// end section request
-
-
+// end section treaty
 // start section reviews
 
 .reviews {
@@ -614,7 +676,7 @@
 }
 
 .reviews__title {
-  @include form-style--text;
+  // @include form-style--text;
 }
 
 .reviews__bg {
@@ -628,9 +690,11 @@
   padding: 30px 50px;
   position: relative;
 }
-.reviews__item-name{
+
+.reviews__item-name {
   text-transform: uppercase;
 }
+
 .reviews__item-name--company {
   text-transform: uppercase;
   color: $grey;
@@ -638,14 +702,13 @@
   font-size: 18px;
   line-height: 20px;
 }
+
 .reviews__item-text {
   max-width: 730px;
   width: 100%;
   font-size: 18px;
   line-height: 23px;
 }
-
-
 
 .reviews__item-text {
   margin-bottom: 30px;
@@ -737,7 +800,70 @@
 }
 
 // end section reviews
+// start section request
 
+.request {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $light-grey;
+}
+
+.request__wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 170px;
+  margin-bottom: 50px;
+}
+
+.request__inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: space-between;
+}
+
+.request__item {
+  border: 1px solid $dark-grey;
+  border-radius: 10px;
+  padding: 20px 25px;
+  max-width: 655px;
+  width: 100%;
+  margin-right: 20px;
+
+  &::placeholder {
+    color: $grey;
+  }
+}
+
+.request__item-text {
+  border: 1px solid $dark-grey;
+  border-radius: 10px;
+  padding: 20px 25px;
+  max-width: 655px;
+  width: 100%;
+  resize: none;
+
+  &::placeholder {
+    color: $grey;
+  }
+}
+
+.request__inner-btn {
+  display: flex;
+  justify-content: center;
+
+}
+
+.request__btn {
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+// end section request
 
 
 
@@ -808,6 +934,22 @@
   text-align: center;
   width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

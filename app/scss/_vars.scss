@@ -9,6 +9,7 @@
   font-weight: 700;
   display: swap;
 }
+
 %Antic-Regular {
   font-family: 'Conv_AnticDidone-Regular', sans-serif;
   font-weight: 400;
@@ -16,7 +17,7 @@
 }
 
 @mixin form-style--btn {
-  background: linear-gradient(180deg, #FFD41F 0%, #FF7B9B 100%);
+  background: linear-gradient(170deg, #FFD41F 0%, #FF7B9B 100%);
 }
 
 @mixin form-style--text {
@@ -25,10 +26,11 @@
   background-clip: text;
   background-image: linear-gradient(to bottom, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
 }
+
 @mixin form-style--border {
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right bottom, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
-    border-image-slice: 1;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right bottom, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
+  border-image-slice: 1;
 }
 
 
