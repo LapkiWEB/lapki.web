@@ -186,7 +186,6 @@ body {
   font-size: 18px;
   line-height: 23px;
   position: relative;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -265,6 +264,7 @@ body {
   -webkit-box-shadow: 6px 6px 8px rgba(41, 41, 41, 0.25);
           box-shadow: 6px 6px 8px rgba(41, 41, 41, 0.25);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .hover-btn {
@@ -292,6 +292,38 @@ body {
   background: #F3F3F3;
 }
 .hover-btn:hover:before {
+  opacity: 1;
+}
+
+.hover-btn--black {
+  position: relative;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  -webkit-box-shadow: 4px 4px 10px rgba(179, 174, 174, 0.5);
+          box-shadow: 4px 4px 10px rgba(179, 174, 174, 0.5);
+  cursor: pointer;
+}
+.hover-btn--black:hover, .hover-btn--black:active {
+  -webkit-box-shadow: -4px -4px 10px rgba(179, 174, 174, 0.5);
+          box-shadow: -4px -4px 10px rgba(179, 174, 174, 0.5);
+  color: #F3F3F3;
+}
+.hover-btn--black:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  left: 2px;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  background: #292929;
+}
+.hover-btn--black:hover:before {
   opacity: 1;
 }
 
@@ -392,6 +424,110 @@ body {
   height: 50px;
 }
 
+.modal {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: none;
+}
+
+.modal__inner {
+  max-width: 1336px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal__wrapper {
+  position: relative;
+}
+
+.modal__title {
+  position: relative;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd41f), to(#ff7b9b));
+  background-image: -o-linear-gradient(top, #ffd41f, #ff7b9b);
+  background-image: linear-gradient(to bottom, #ffd41f, #ff7b9b);
+}
+
+.modal__item {
+  background-color: #F3F3F3 !important;
+  color: #292929 !important;
+}
+.modal__item::-webkit-input-placeholder {
+  color: #292929 !important;
+}
+.modal__item::-moz-placeholder {
+  color: #292929 !important;
+}
+.modal__item:-ms-input-placeholder {
+  color: #292929 !important;
+}
+.modal__item::-ms-input-placeholder {
+  color: #292929 !important;
+}
+.modal__item::placeholder {
+  color: #292929 !important;
+}
+
+.modal-request__btn {
+  color: #292929 !important;
+}
+
+.main-btn:hover .modal-request__btn {
+  color: #F3F3F3 !important;
+}
+
+.close__btn {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  cursor: pointer;
+}
+
+.close__line {
+  width: 30px;
+  background-color: #ffffff;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.close__line1 {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 6px;
+}
+
+.close__line2 {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -3px;
+}
+
+.show {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
 @font-face {
   font-family: "Conv_AnticDidone-Regular";
   src: url("../fonts/AnticDidone-Regular.eot");
@@ -411,6 +547,7 @@ body {
 }
 .header {
   background-color: #292929;
+  background-color: rgba(41, 41, 41, 0.8);
   padding: 40px 95px;
   top: 0;
   left: 0;
@@ -495,7 +632,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(29, 29, 29, 0.9);
+  background-color: rgba(29, 29, 29, 0.8);
   -webkit-animation-name: show_header;
           animation-name: show_header;
   -webkit-animation-duration: 1s;
@@ -1711,7 +1848,11 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .arrow__wrapper {
+  .slick-next {
+    display: none;
+  }
+
+  .slick-prev {
     display: none;
   }
 

@@ -4,7 +4,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -75,6 +75,7 @@ body {
   // box-shadow: 4px 4px 4px rgba(41, 41, 41, 0.25);
   box-shadow: 6px 6px 8px rgba(41, 41, 41, 0.25);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 // КНОПКА ЗАКРАШЕННАЯ ВВЕРХ
@@ -85,6 +86,7 @@ body {
   &:hover,
   &:active {
     box-shadow: 6px 6px 8px rgba(41, 41, 41, 0.5);
+    
   }
 
   &:before {
@@ -98,6 +100,7 @@ body {
     opacity: 0;
     transition: all 500ms ease-in-out;
     background: $light-grey;
+     
   }
 
   &:hover {
@@ -108,7 +111,42 @@ body {
 }
 
 // ЭФФЕКТ НАВЕДЕНИЯ НА ЗАКРАШЕННУЮ КНОПКУ ВВЕРХ
-// КНОПКА ТЕМНАЯ НА ТЕМНОМ ФОНЕ ВНИЗ
+// ЭФФЕКТ НАВЕДЕНИЯ НА ЗАКРАШЕННУЮ КНОПКУ НА ТЕМНОМ ФОНЕ ВНИЗ
+.hover-btn--black {
+  position: relative;
+  transition: all 250ms ease-in-out;
+  box-shadow: 4px 4px 10px rgba(179, 174, 174, 0.5);
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    box-shadow: -4px -4px 10px rgba(179, 174, 174, 0.5);
+    color: $light-grey;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    left: 2px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    background: $dark-grey;
+
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+// ЭФФЕКТ НАВЕДЕНИЯ НА ЗАКРАШЕННУЮ КНОПКУ НА ТЕМНОМ ФОНЕ ВВЕРХ
+// КНОПКА ТЕМНАЯ ПУСТАЯ НА ТЕМНОМ ФОНЕ ВНИЗ
 .main__border-wrapper {
   box-shadow: none;
   transition: all 250ms ease-in-out;
@@ -132,17 +170,19 @@ body {
   &:hover {
     color: $dark-grey;
     box-shadow: -4px -4px 10px rgba(179, 174, 174, 0.5);
+
     &::before {
       background-color: transparent;
- 
+
     }
-    button{
+
+    button {
       color: $dark-grey;
     }
   }
 }
 
-// КНОПКА ТЕМНАЯ НА ТЕМНОМ ФОНЕ ВВЕРХ
+// КНОПКА ТЕМНАЯ ПУСТАЯ НА ТЕМНОМ ФОНЕ ВВЕРХ
 
 
 .main__border-box {
@@ -170,7 +210,7 @@ body {
 
 .slick-dots li[class="slick-active"] button {
   @include form-style--btn;
-  
+
 }
 
 
@@ -191,16 +231,19 @@ body {
   left: -80px;
   z-index: 1;
 }
+
 .slick-next {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   right: -85px;
 }
+
 .slick-arrow {
   cursor: pointer;
   background-color: transparent;
   border: none;
+
   .arrow__wrapper {
     img {
       width: 50px;
@@ -210,3 +253,106 @@ body {
 }
 
 // КНОПКИ СЛАЙДЕР
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(41, 41, 41, 0.8);
+  backdrop-filter: blur(20px);
+  display: none;
+  
+
+}
+
+
+
+.modal__inner {
+  max-width: 1336px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal__wrapper {
+  position: relative;
+}
+
+.modal__title {
+  position: relative;
+  @include form-style--text;
+}
+
+.modal__item {
+  background-color: $light-grey !important;
+  color: $dark-grey !important;
+
+  &::placeholder {
+    color: $dark-grey !important;
+  }
+}
+
+.modal-request__btn {
+  color: $dark-grey !important;
+}
+
+.main-btn {
+  &:hover {
+    .modal-request__btn {
+      color: $light-grey !important;
+    }
+  }
+}
+
+.close__btn {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  cursor: pointer;
+}
+
+.close__line {
+  width: 30px;
+  background-color: $white;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.close__line1 {
+  transform: rotate(45deg);
+  top: 6px;
+}
+
+.close__line2 {
+  transform: rotate(-45deg);
+  top: -3px;
+}
+
+.show {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}

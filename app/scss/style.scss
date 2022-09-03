@@ -6,6 +6,7 @@
 // start header
 .header {
   background-color: $dark-grey;
+  background-color: rgba(41, 41, 41, 0.8);
   padding: 40px 95px;
   top: 0;
   left: 0;
@@ -79,7 +80,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(29, 29, 29, 0.90);
+  background-color: rgba(29, 29, 29, 0.8);
   animation-name: show_header;
   animation-duration: 1s;
   z-index: 100;

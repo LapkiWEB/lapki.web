@@ -109,7 +109,7 @@
         <ul class="menu__items">
           <li class="menu__list">
             <a class="menu__list-link menu__list-main--link subtitle" href="#">
-              SEO-оптимизация
+              SEO-продвижение
             </a>
           </li>
         </ul>
@@ -192,21 +192,21 @@
             МЫ В СОЦ.СЕТЯХ
           </div>
           <ul class="menu__items">
-            <li class="menu__list menu__list-icon--link">
+            <!-- <li class="menu__list menu__list-icon--link">
               <a class="menu__list-link" href="#">
                 <img class="menu__list-icon" src="images/icons/instagram.png" alt="">
               </a>
-            </li>
+            </li> -->
             <li class="menu__list menu__list-icon--link">
               <a class="menu__list-link" href="#">
                 <img class="menu__list-icon" src="images/icons/vk.png" alt="">
               </a>
             </li>
-            <li class="menu__list menu__list-icon--link">
+            <!-- <li class="menu__list menu__list-icon--link">
               <a class="menu__list-link" href="#">
                 <img class="menu__list-icon" src="images/icons/facebook.png" alt="">
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -248,11 +248,11 @@
                 <h2 class="screen__subtitle">
                   Под вашего клиента
                 </h2>
-                <a class="screen__btn main-btn hover-btn" href="#">
-                  <div class="main__border-box">
+                <div data-modal class="screen__btn main-btn hover-btn">
+                  <div  class="main__border-box">
                     Написать нам
                   </div>
-                </a>
+                </div>
               </div>
             </div>
             <img class="screen__img" src="images/content/cat__screen-1.png" alt="">
@@ -369,11 +369,11 @@
 
           </div>
           <div class="benefits__inner">
-            <a class="benefits__btn main-btn hover-btn" href="#">
+            <div data-modal class="benefits__btn main-btn hover-btn">
               <div class="main__border-box">
                 Написать нам
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
@@ -479,7 +479,7 @@
             <span class="four"></span>
           </a>
           <div class="gallery__inner">
-            <div class="main__border-wrapper main-btn">
+            <div class="hover-btn--black main-btn">
               <div class="main__border-box">
                 Больше работ
               </div>
@@ -547,11 +547,11 @@
               </div>
             </a>
             <div class="services__inner">
-              <a class="services__btn main-btn hover-btn" href="#">
+              <div data-modal class="services__btn main-btn hover-btn">
                 <div class="main__border-box">
                   Написать нам
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -852,31 +852,6 @@
       </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <section class="request section">
         <div class="container">
           <h2 class="request__title title">
@@ -891,7 +866,7 @@
               <textarea class="request__item-text" name="text" placeholder="Сообщение..."></textarea>
             </div>
             <div class="request__inner-btn">
-              <div class="main__border-wrapper main-btn">
+              <div class="main-btn main__border-wrapper">
                 <button class="request__btn main__border-box">
                   Отправить
                 </button>
@@ -904,32 +879,6 @@
 
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <footer class="footer">
@@ -995,7 +944,7 @@
           <ul class="menu__items">
             <li class="menu__list">
               <a class="menu__list-link menu__list-main--link subtitle" href="#">
-                SEO-оптимизация
+                SEO-продвижение
               </a>
             </li>
           </ul>
@@ -1047,21 +996,21 @@
               МЫ В СОЦ.СЕТЯХ
             </div>
             <ul class="menu__items">
-              <li class="menu__list menu__list-icon--link">
+              <!-- <li class="menu__list menu__list-icon--link">
                 <a class="menu__list-link" href="#">
                   <img class="menu__list-icon" src="images/icons/instagram.png" alt="">
                 </a>
-              </li>
+              </li> -->
               <li class="menu__list menu__list-icon--link">
                 <a class="menu__list-link" href="#">
                   <img class="menu__list-icon" src="images/icons/vk.png" alt="">
                 </a>
               </li>
-              <li class="menu__list menu__list-icon--link">
+              <!-- <li class="menu__list menu__list-icon--link">
                 <a class="menu__list-link" href="#">
                   <img class="menu__list-icon" src="images/icons/facebook.png" alt="">
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
 
@@ -1079,6 +1028,48 @@
       <img class="footer__bg" src="images/content/footer-bg.png" alt="">
 
     </footer>
+
+
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="container">
+          <div class="modal__wrapper">
+
+            <ul data-close class="close__btn">
+              <li class="close__line close__line1"></li>
+              <li class="close__line close__line2"></li>
+            </ul>
+
+            <h2 class="modal__title title">
+              Оставить заявку
+            </h2>
+
+            <form class="request__form">
+              <div class="request__wrapper">
+                <div class="request__inner">
+                  <input class="request__item modal__item" type=" text" name="name" placeholder="Имя..." required>
+                  <input class="request__item modal__item" type="text" name="phone" placeholder="Телефон..." required>
+                </div>
+                <textarea class="request__item-text modal__item" name="text" placeholder="Сообщение..."></textarea>
+              </div>
+              <div class="request__inner-btn">
+                <div class="main-btn hover-btn--black ">
+                  <button class="modal-request__btn request__btn main__border-box">
+                    Отправить
+                  </button>
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
   </div>
 
   <script src="js/main.min.js"></script>
