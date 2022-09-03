@@ -14,13 +14,18 @@
 
 
 @media(max-width: 1280px) {
+  .slick-prev {
+    left: -65px;
+  }
+
+  .slick-next {
+    right: -65px;
+  }
   .container {
     padding: 0 70px;
   }
 
   .header {
-    // padding: 40px 70px;
-
     &.active {
       padding: 40px 85px 35px 70px;
     }
@@ -138,15 +143,6 @@
   .treaty__item-img {
     display: none;
   }
-
-  .reviews__inner {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .reviews__item {
-    margin-bottom: 30px;
-  }
 }
 
 @media(max-width: 1000px) {
@@ -168,10 +164,6 @@
 }
 
 @media(max-width: 850px) {
-  // .header__fixed {
-  //   padding: 12px 70px;
-  // }
-
   .menu.active {
     padding-top: 10px;
   }
@@ -263,7 +255,16 @@
     font-size: 26px;
     line-height: 30px;
   }
+  .slider__wrapper {
+    margin: 0 auto;
+  }
 
+  .reviews__slider {
+    margin: 0;
+  }
+ .reviews__item{
+  height: 250px;
+ }
   .request__wrapper {
     flex-wrap: wrap;
     justify-content: center;
@@ -274,7 +275,11 @@
   }
 
   .request__item {
+    max-width: 700px;
     margin: 0 0 20px;
+  }
+  .request__item-text{
+    max-width: 700px;
   }
 
   .footer {
@@ -292,7 +297,7 @@
   }
 }
 
-// ВЕРТИКАЛЬ!!!!!!
+// ВЕРТИКАЛЬ ВНИЗ!!!!!!
 @media(max-height: 830px) {
   .header.active {
     overflow: auto;
@@ -331,7 +336,7 @@
   }
 }
 
-// ВЕРТИКАЛЬ ! ! ! ! ! !
+// ВЕРТИКАЛЬ ВВЕРХ! ! ! ! ! !
 
 @media(max-width: 700px) {
   .gallery__item {
@@ -350,6 +355,9 @@
 }
 
 @media(max-width: 600px) {
+.arrow__wrapper{
+  display: none;
+}
   .container {
     padding: 0 20px;
   }
@@ -367,8 +375,6 @@
   .header.header__fixed.active {
     padding: 12px 20px;
   }
-
-
 
   .logo,
   .screen__logo {
@@ -397,6 +403,10 @@
 }
 
 @media(max-width: 500px) {
+  .menu.active {
+    padding-top: 10px;
+    
+  }
   .screen__contacts {
     display: none;
   }
@@ -449,47 +459,6 @@
   .treaty__list {
     font-size: 18px;
     line-height: 20px;
-  }
-
-  // .slider__wrapper.slick-initialized.slick-slider {
-  //   margin-right: 50px;
-  // }
-  .reviews__bg.main__border-wrapper {
-    &::before {
-      left: 2px;
-      right: 3px;
-    }
-  }
-
-  .reviews__inner {
-    padding: 15px;
-    text-align: center;
-  }
-
-  .reviews__box {
-    margin-left: 0;
-    min-width: inherit;
-    max-width: 500px;
-    justify-content: center;
-  }
-
-  .reviews__items {
-    justify-content: center;
-  }
-
-  .reviews__items-link {
-    font-size: 18px;
-    line-height: 20px;
-
-    &::before {
-      top: 6px;
-      left: 3px;
-    }
-  }
-
-  .reviews__yandex,
-  .reviews__google {
-    padding-left: 50px;
   }
 
   .footer {
