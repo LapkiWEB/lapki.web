@@ -1071,6 +1071,7 @@
 }
 
 .examples__item {
+  cursor: pointer;
   border-radius: 5px;
   padding: 2px;
   &:hover {
@@ -1123,6 +1124,10 @@
 // end section examples
 
 
+.start__design-subtitle{
+  color: $light-grey;
+  margin-bottom: 30px;
+}
 
 
 @import 'media';
