@@ -50,7 +50,8 @@
 }
 
 .logo,
-.screen__logo {
+.screen__logo,
+.start__logo--light {
   width: 60.72px;
   height: 53px;
 }
@@ -246,7 +247,8 @@
 
 }
 
-.screen__logo {
+.screen__logo,
+.start__logo--light {
   position: absolute;
   top: 40px;
   left: 95px;
@@ -259,7 +261,8 @@
   display: none;
 }
 
-.screen__menu-btn {
+.screen__menu-btn,
+.start__menu-btn--light {
   width: 30px;
   cursor: pointer;
   position: absolute;
@@ -268,6 +271,14 @@
   z-index: 10;
 }
 
+.start__row--light {
+  background-color: $light-grey;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 
 .screen__row {
   background-color: #000;
@@ -439,10 +450,10 @@
   line-height: 22px;
 }
 
-.benefits__inner {
-  display: flex;
-  justify-content: center;
-}
+// .benefits__inner {
+//   display: flex;
+//   justify-content: center;
+// }
 
 
 
@@ -482,14 +493,14 @@
   .one {
     background: linear-gradient(180deg, #FFD41F 0%, #FF7B9B 100%);
     height: 0;
-    width: 1px;
+    width: 2px;
     top: 0;
     left: 0;
   }
 
   .two {
     background: #FF7B9B;
-    height: 1px;
+    height: 2px;
     width: 0;
     bottom: 0;
     left: 0;
@@ -498,27 +509,21 @@
   .three {
     background: linear-gradient(180deg, #FFD41F 0%, #FF7B9B 100%);
     height: 0;
-    width: 1px;
+    width: 2px;
     bottom: 0;
     right: 0
   }
 
   .four {
     background: #FFD41F;
-    height: 1px;
+    height: 2px;
     width: 0;
     top: 0;
     right: 0;
   }
 
   &:hover {
-    // .main__border-wrapper {
-    //   color: $dark-grey;
-    //   &::before{
 
-    //     background: linear-gradient(180deg, #FFD41F 0%, #FF7B9B 100%);
-    //   }
-    // }
     .one,
     .three {
       height: 100%;
@@ -649,7 +654,7 @@
 
 .treaty__title {
   @include form-style--text;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 }
 
 .treaty__wrapper {
@@ -683,13 +688,7 @@
   margin-bottom: 30px;
 
   &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 7px;
-    width: 10px;
-    height: 10px;
-    background-image: url('../images/icons/list-style.png');
+    @include form-style--dot;
   }
 }
 
@@ -705,14 +704,17 @@
   background-size: cover;
   background-position: center;
 }
-.slider__inner{
+
+.slider__inner {
   position: relative;
 }
-.slider__wrapper{
+
+.slider__wrapper {
   margin: 0 -30px;
 }
+
 .reviews__slider {
- margin: 0 30px;
+  margin: 0 30px;
 }
 
 .reviews__bg {
@@ -720,9 +722,10 @@
   width: 100%;
   padding: 30px 10px;
   margin: 0 auto;
+
   &::before {
     background-color: $white;
-  height: auto;
+    height: auto;
   }
 
   &:hover::before {
@@ -735,7 +738,7 @@
   position: relative;
   color: $dark-grey;
   height: 415px;
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 .reviews__item-name {
@@ -820,39 +823,6 @@
 
 
 // end section request
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // start footer
 
 .footer {
@@ -891,37 +861,268 @@
   width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // end footer
+
+
+
+
+// start section start
+
+
+.start {
+  background-color: $dark-grey;
+  margin-top: -133px;
+  padding-top: 113px;
+  position: relative;
+  padding-bottom: 50px;
+
+}
+
+.start__title,
+.stages__title {
+  @include form-style--text;
+}
+
+.start__text {
+  @extend %Arsenal-Regular;
+  // font-size: 20px;
+  // line-height: 25px;
+  color: $light-grey;
+  margin-bottom: 50px;
+}
+
+.dev-start__inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.dev-start__item {
+  max-width: 420px;
+  width: 100%;
+  min-height: 104px;
+  padding: 20px;
+}
+
+.dev-start__item.main-btn {
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(255, 1255, 255, 0.5);
+
+    &::before {
+      background-color: $dark-grey;
+    }
+
+    .dev-start__item-title {
+      text-shadow:
+        0px 0px 5px rgba(255, 255, 255, 1);
+    }
+
+    .dev-start__item-text {
+      color: $white;
+      text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+.dev-start__item-title {
+  @extend %Arsenal-Regular;
+  text-transform: uppercase;
+  text-align: center;
+  color: $light-grey;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  transition: all 500ms ease-in-out;
+
+
+}
+
+.dev-start__item-text {
+  @extend %Arsenal-Regular;
+  color: $grey;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: all 500ms ease-in-out;
+
+}
+
+.dev-start__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+// end section start
+
+
+
+
+
+// start section stages
+.stages {
+  background-color: $dark-grey;
+  position: relative;
+
+}
+
+.cat__stages {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 496px;
+  height: 687px;
+}
+
+.stages__inner {
+  width: 57%;
+  margin-left: auto;
+}
+
+.stages__item-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.stages__item {
+  max-width: 746px;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+}
+
+.stages__item.main-btn {
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(255, 1255, 255, 0.5);
+    color: $light-grey;
+
+    &::before {
+      background-color: $dark-grey;
+    }
+  }
+}
+
+.stages__item--active {
+  .stages__item-text {
+    display: block;
+  }
+}
+
+.stages__item-title {
+  @extend %Arsenal-Regular;
+  text-transform: uppercase;
+  padding: 15px 0px 0px 0px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: $light-grey;
+}
+
+.stages__item-title--text {
+  padding-right: 10px;
+}
+
+.stages__item-text {
+  @extend %Arsenal-Regular;
+  display: none;
+}
+
+.stages__list {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+
+  &::before {
+    @include form-style--dot;
+  }
+}
+
+.stages__item-title--text-bonus {
+  @include form-style--text;
+
+}
+
+.stages__item-wrapper {
+  img {
+    min-width: 23px;
+    height: 15px;
+  }
+}
+
+// end section stages
+// start section examples
+.examples--black {
+  background-color: $dark-grey;
+}
+
+.examples__inner {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.examples__item {
+  border-radius: 5px;
+  padding: 2px;
+  &:hover {
+    @include form-style--btn;
+    .examples__bg {
+      opacity: 1;
+    }
+    
+  }
+}
+
+.examples__background {
+  width: 415px;
+  height: 415px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.examples__bg {
+  background: rgba(41, 41, 41, 0.8);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 30px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.examples__bg-title {
+  @extend %Arsenal-Regular;
+  color: $white;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.examples__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+// end section examples
+
+
 
 
 @import 'media';

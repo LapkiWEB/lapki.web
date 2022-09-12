@@ -16,10 +16,22 @@
   display: swap;
 }
 
+//Старт Цветная точка в списках на бефоре//
+@mixin form-style--dot {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(170deg, #FFD41F 0%, #FF7B9B 100%);
+  border-radius: 50%;
+}
+
 @mixin form-style--btn {
   background: linear-gradient(170deg, #FFD41F 0%, #FF7B9B 100%);
 }
-
+//Старт Цветной текст заголовки?//
 @mixin form-style--text {
   color: transparent;
   -webkit-background-clip: text;
@@ -28,15 +40,16 @@
 }
 
 @mixin form-style--border {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-image: linear-gradient(to right bottom, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
   border-image-slice: 1;
+ 
 }
-
+//Старт ховер иконки соц сетей//
 @mixin icon-style--hover {
   // border: 1px solid transparent;
   box-shadow: -3px -3px 8px rgba(255, 212, 31, 1),
-  3px 3px 8px rgba(255, 123, 155, 1);
+    3px 3px 8px rgba(255, 123, 155, 1);
 }
 
 

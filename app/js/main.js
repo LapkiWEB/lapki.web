@@ -57,6 +57,13 @@ $(function () {
     ]
   });
 
+
+  $('.stages__item').on('click', (function () {
+    $(this).find('.stages__item-text').show(500);
+    $(this).siblings().find('.stages__item-text').hide(500);
+
+  }));
+
 })
 
   // window.addEventListener('DOMContentLoaded', function () {
@@ -95,3 +102,5 @@ $(function () {
   });
 
 // });
+
+

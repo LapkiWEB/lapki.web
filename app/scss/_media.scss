@@ -10,8 +10,15 @@
     width: 416px;
     height: 400px;
   }
-}
 
+
+}
+@media(max-width: 1350px) {
+  .treaty__item-img {
+    width: 343px;
+    height: 300px;
+  }
+}
 
 @media(max-width: 1280px) {
   .slick-prev {
@@ -41,11 +48,13 @@
   }
 
   .screen__menu-btn,
+  .start__menu-btn--light,
   .screen__contacts {
     right: 70px;
   }
 
-  .screen__logo {
+  .screen__logo,
+  .start__logo--light {
     left: 70px;
   }
 
@@ -66,10 +75,11 @@
     padding: 25px 40px;
   }
 
-  .treaty__item-img {
-    width: 398px;
-    height: 315px;
-  }
+
+    .cat__stages {
+      width: 398px;
+      height: 552px;
+    }
 }
 
 @media(max-width: 1100px) {
@@ -146,6 +156,25 @@
   .treaty__item-img {
     display: none;
   }
+
+  .cat__stages {
+    display: none;
+  }
+
+  .stages__inner {
+    width: 100%;
+  }
+
+  .stages__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stages__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 @media(max-width: 1000px) {
@@ -167,6 +196,10 @@
 }
 
 @media(max-width: 850px) {
+  .close__btn {
+    top: 17px;
+  }
+
   .menu.active {
     padding-top: 10px;
   }
@@ -359,13 +392,17 @@
   .gallery__item-box--text {
     margin-bottom: 365px;
   }
+   .treaty__subtitle {
+    margin-bottom: 30px;
+     span {
+       display: none;
+      //  display: block;
+      //  width: fit-content;
+     }
+   }
 }
 
 @media(max-width: 600px) {
-  // .arrow__wrapper {
-  //   display: none;
-  // }
-
   .slick-next {
     display: none;
   }
@@ -393,14 +430,16 @@
   }
 
   .logo,
-  .screen__logo {
+  .screen__logo,
+  .start__logo--light {
     width: 40px;
     height: 35px;
     left: 20px;
     top: 25px;
   }
 
-  .screen__menu-btn {
+  .screen__menu-btn,
+  .start__menu-btn--light {
     right: 20px;
     top: 29px;
   }
@@ -411,11 +450,7 @@
   }
 
 
-  .treaty__subtitle {
-    span {
-      display: none;
-    }
-  }
+ 
 }
 
 @media(max-width: 500px) {
@@ -476,6 +511,9 @@
   .treaty__list {
     font-size: 18px;
     line-height: 20px;
+    &::before{
+      top: 6px;
+    }
   }
 
   .footer {
@@ -486,6 +524,13 @@
     width: 290px;
     height: 99px;
     margin-left: -145px;
+  }
+  .examples__background {
+    width: 300px;
+    height: 300px;
+  }
+  .examples__bg{
+    padding: 30px;
   }
 }
 
