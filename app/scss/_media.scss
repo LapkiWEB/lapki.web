@@ -1,3 +1,10 @@
+@media(max-width: 1800px) {
+  .decr__title {
+    max-width: 445px;
+  }
+
+}
+
 @media(max-width: 1545px) {
   .container {
     max-width: 1528px;
@@ -13,6 +20,22 @@
 
 
 }
+
+@media(max-width: 1400px) {
+  .directions__item {
+    &:nth-child(3n+2) {
+      border-image-slice: 0 0 0 0;
+    }
+
+    &:nth-child(even) {
+      border: 1px solid transparent;
+      border-image: linear-gradient(to bottom, #ffd41f, #ff7b9b);
+      border-image-slice: 0 0 0 1;
+    }
+  }
+
+}
+
 @media(max-width: 1350px) {
   .treaty__item-img {
     width: 343px;
@@ -75,11 +98,14 @@
     padding: 25px 40px;
   }
 
+  .decr__title {
+    max-width: 400px;
+  }
 
-    .cat__stages {
-      width: 398px;
-      height: 552px;
-    }
+  .directions__item {
+    padding: 15px 30px;
+  }
+
 }
 
 @media(max-width: 1100px) {
@@ -157,24 +183,6 @@
     display: none;
   }
 
-  .cat__stages {
-    display: none;
-  }
-
-  .stages__inner {
-    width: 100%;
-  }
-
-  .stages__wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .stages__item {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 }
 
 @media(max-width: 1000px) {
@@ -193,6 +201,30 @@
     width: 100%;
   }
 
+  .start__cat {
+    display: none;
+  }
+
+  .start__title {
+    margin-bottom: 100px;
+  }
+
+  .decr__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .decr__title {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .directions__item {
+    &:nth-child(1n+1) {
+      border: 1px solid transparent;
+      border-image: linear-gradient(to bottom, #ffd41f, #ff7b9b);
+      border-image-slice: 0 1 0 1;
+    }
+  }
 }
 
 @media(max-width: 850px) {
@@ -335,6 +367,16 @@
     height: 163px;
     margin-left: -239px;
   }
+  .stages__inner{
+    flex-wrap: wrap;
+  }
+  .stages__item-box{
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+  .stages__item-text{
+    margin-left: 0;
+  }
 }
 
 // ВЕРТИКАЛЬ ВНИЗ!!!!!!
@@ -392,14 +434,20 @@
   .gallery__item-box--text {
     margin-bottom: 365px;
   }
-   .treaty__subtitle {
+
+  .treaty__subtitle {
     margin-bottom: 30px;
-     span {
-       display: none;
+
+    span {
+      display: none;
       //  display: block;
       //  width: fit-content;
-     }
-   }
+    }
+  }
+
+  .start__wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 @media(max-width: 600px) {
@@ -450,7 +498,7 @@
   }
 
 
- 
+
 }
 
 @media(max-width: 500px) {
@@ -511,7 +559,8 @@
   .treaty__list {
     font-size: 18px;
     line-height: 20px;
-    &::before{
+
+    &::before {
       top: 6px;
     }
   }
@@ -525,11 +574,13 @@
     height: 99px;
     margin-left: -145px;
   }
+
   .examples__background {
     width: 300px;
     height: 300px;
   }
-  .examples__bg{
+
+  .examples__bg {
     padding: 30px;
   }
 }
