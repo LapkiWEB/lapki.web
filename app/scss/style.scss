@@ -988,6 +988,7 @@
   justify-content: center;
   align-content: space-between;
   margin-bottom: 60px;
+
   &:nth-child(3n+2) {
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom, #ffd41f, #ff7b9b);
@@ -1015,22 +1016,26 @@
 
 
 // start section stages
-.stages__title{
+.stages__title {
   @include form-style--text;
 }
-.stages__wrapper{
+
+.stages__wrapper {
   margin-bottom: 50px;
 }
-.stages__item{
+
+.stages__item {
   width: 100%;
   border-bottom: 1px solid #000;
   padding: 50px 0px;
 }
-.stages__inner{
+
+.stages__inner {
   display: flex;
   justify-content: space-between;
 }
-.stages__number{
+
+.stages__number {
   @extend %Antic-Regular;
   font-size: 64px;
   line-height: 76px;
@@ -1040,7 +1045,8 @@
   margin-right: 30px;
 
 }
-.stages__item-box{
+
+.stages__item-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1048,7 +1054,8 @@
 
   width: 100%;
 }
-.stages__item-title{
+
+.stages__item-title {
   @extend %Arsenal-Regular;
   font-size: 24px;
   line-height: 30px;
@@ -1056,20 +1063,93 @@
   max-width: 390px;
   width: 100%;
 }
-.stages__item-text{
+
+.stages__item-text {
   max-width: 554px;
   width: 100%;
   margin-left: 30px;
+  margin-bottom: 15px;
 }
+
 .stages__item-list {
-margin-bottom: 5px;
-font-size: 20px;
-line-height: 25px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 // end section stages
 // start section examples
+.examples__inner {
+  display: grid;
+  // grid-template-columns: repeat(3, 442px);
+  // grid-template-rows: repeat(7, 466px);
+  grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 466px);
+  gap: 100px 20px;
+  margin-bottom: 50px;
+}
 
+.examples__item {
+  // background-color: $grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // background-image: url('../images/content/examples-1.jpg');
+  border-radius: 0px;
+
+}
+
+.examples__item-big {
+  // grid-column: 2/4;
+  grid-column-start: span 2;
+}
+
+.examples__item-info {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 2px solid $dark-grey;
+}
+
+.examples__item-title {
+  @extend %Arsenal-Bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: $dark-grey;
+}
+
+.examples__item-text {
+  font-size: 20px;
+  line-height: 25px;
+  color: $dark-grey;
+  margin-bottom: 20px;
+}
+
+.examples__item-link {
+  @extend %Arsenal-Bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: $dark-grey;
+  margin-bottom: 30px;
+  padding-right: 47px;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  &::before {
+    content: '';
+    width: 32px;
+    height: 8px;
+    background-image: url('../images/icons/examples-arrow.svg');
+    position: absolute;
+    right: 0;
+    top: 12px;
+  }
+
+  &:hover {
+    @include form-style--text;
+  }
+}
 
 // end section examples
 
