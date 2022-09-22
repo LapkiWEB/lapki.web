@@ -723,6 +723,7 @@
   margin: 15px 30px;
   padding: 30px;
   position: relative;
+
   &::before {
     content: '';
     height: 475px;
@@ -948,13 +949,14 @@
 .start {
   background-color: $dark-grey;
   margin-top: -133px;
-  padding-top: 113px;
+  // padding-top: 113px;
+  padding-top: 85px;
   position: relative;
   padding-bottom: 50px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+  // height: 94vh;
 }
 
 .section__wrapper {
@@ -968,13 +970,25 @@
   margin-bottom: 250px;
 }
 
-// .start__text {
-//   @extend %Arsenal-Regular;
-//   // font-size: 20px;
-//   // line-height: 25px;
-//   color: $light-grey;
-//   margin-bottom: 50px;
-// }
+.website__title {
+  margin-bottom: 30px;
+}
+
+.start__title-text {
+  @extend %Arsenal-Regular;
+  font-size: 24px;
+  line-height: 30px;
+  color: $light-grey;
+  margin-bottom: 10px;
+}
+
+.start__text {
+  @extend %Arsenal-Regular;
+  // font-size: 20px;
+  // line-height: 25px;
+  color: $light-grey;
+  margin-bottom: 30px;
+}
 
 .start__subtitle {
   display: block;
@@ -1001,6 +1015,34 @@
       background-color: $dark-grey;
     }
   }
+}
+
+.start__descr-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.start__descr-item {
+  font-size: 24px;
+  line-height: 30px;
+  color: $light-grey;
+}
+
+.start__descr-item--title {
+  text-transform: uppercase;
+  @extend %Arsenal-Regular;
+  display: inline-block;
+  font-size: calc(30px + 6 * ((100vw - 1920px) / (1920 - 320)));
+}
+
+.start__descr-item--number {
+  @extend %Arsenal-Bold;
+  @include form-style--text;
+  display: inline-block;
+  font-size: calc(40px + 10 * ((100vw - 1920px) / (1920 - 320)));
+  line-height: calc(50px + 30 * ((100vw - 1920px) / (1920 - 320)));
 }
 
 .start__cat {
@@ -1148,11 +1190,25 @@
 }
 
 // end section stages
-// start section examples
+// start section examples, website
+.website {
+  background-color: $dark-grey;
+}
+
 .examples__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 466px);
+  // grid-template-rows: repeat(7, 466px);
+  grid-template-rows: repeat(7, 432px);
+  gap: 100px 20px;
+  margin-bottom: 50px;
+}
+
+.website__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(7, 466px);
+  grid-template-rows: repeat(3, 432px);
   gap: 100px 20px;
   margin-bottom: 50px;
 }
@@ -1165,8 +1221,13 @@
 
 }
 
+.examples__item-img {
+  border-radius: 5px;
+}
+
 .examples__item-big {
   grid-column-start: span 2;
+
 }
 
 .examples__item-info {
@@ -1174,6 +1235,10 @@
   align-content: space-between;
   flex-wrap: wrap;
   border-bottom: 2px solid $dark-grey;
+}
+
+.website__item-info {
+  border-bottom: 2px solid $light-grey;
 }
 
 .examples__item-title {
@@ -1184,11 +1249,20 @@
   color: $dark-grey;
 }
 
+.website__item-title {
+  color: $light-grey;
+}
+
+
 .examples__item-text {
   font-size: 20px;
   line-height: 25px;
   color: $dark-grey;
   margin-bottom: 20px;
+}
+
+.website__item-text {
+  color: $light-grey;
 }
 
 .examples__item-link {
@@ -1216,9 +1290,73 @@
   }
 }
 
+// .examples__item-link.website__item-link {
+//   &::before {
+//     display: none;
+//   }
+// }
+.website__item-link {
+  color: $light-grey;
+
+  &::before {
+    content: '';
+    width: 32px;
+    height: 8px;
+    background-image: url('../images/icons/website-arrow.svg');
+    position: absolute;
+    right: 0;
+    top: 12px;
+  }
+
+  &:hover {
+    @include form-style--text;
+  }
+}
+
+
+
 // end section examples
 
+// start section whom
+.whom__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
+.whom__item {
+  max-width: 550px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.whom___number {
+  @extend %Antic-Regular;
+  font-size: 64px;
+  line-height: 76px;
+  color: $grey;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+
+}
+
+.whom__item-title {
+  @extend %Arsenal-Regular;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+
+}
+
+.whom__item-text {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+
+// end section whom
 
 
 @import 'media';
