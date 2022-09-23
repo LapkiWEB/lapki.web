@@ -1331,6 +1331,13 @@
   margin-bottom: 50px;
 }
 
+.whom__item-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
 .whom___number {
   @extend %Antic-Regular;
   font-size: 64px;
@@ -1346,7 +1353,7 @@
   @extend %Arsenal-Regular;
   font-size: 24px;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
 }
 
@@ -1358,5 +1365,130 @@
 
 // end section whom
 
+// start section questions
+.questions {
+  background-color: $dark-grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.questions__item {
+  padding: 20px 60px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+}
+
+.questions__item.main-btn {
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(255, 1255, 255, 0.5);
+
+    &::before {
+      background-color: $dark-grey;
+    }
+  }
+}
+
+.questions__wrapper {
+  position: relative;
+  z-index: 100;
+}
+
+.questions__item-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions__item-title--text {
+  @extend %Arsenal-Regular;
+  color: $light-grey;
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+}
+
+.questions__item-title--btn.active {
+  transition: all .3s;
+
+  .questions__row-1 {
+    transform: rotate(45deg);
+  }
+
+  .questions__row-2 {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+}
+
+.questions__row {
+  @include form-style--btn;
+  height: 3px;
+  width: 25px;
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: all .3s;
+}
+
+.questions__row-1 {
+  transform: rotate(90deg);
+  position: relative;
+  top: 12px;
+}
+
+.questions__row-2 {
+  position: relative;
+  top: 10px;
+}
+
+.questions__item-text {
+  font-size: 20px;
+  line-height: 23px;
+  color: $light-grey;
+  padding-top: 25px;
+  display: none;
+}
+
+.questions__text-open {
+  display: block;
+}
+
+// end section questions
+
+
+// start section offer
+
+.offer__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.offer__item {
+  max-width: 600px;
+  width: 100%;
+  padding: 39px 59px;
+
+  &::before {
+    background-color: $light-grey;
+  }
+
+  &:hover::before {
+    background-color: $white;
+  }
+}
+
+.offer__item-text {
+  position: relative;
+  color: $dark-grey;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// end section offer
 @import 'media';
