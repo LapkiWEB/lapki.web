@@ -260,6 +260,7 @@
 
   .website__title {
     margin-bottom: 30px;
+
   }
 
   .decr__wrapper {
@@ -599,10 +600,12 @@
   .start__wrapper {
     flex-wrap: wrap;
   }
-  .whom__item-box{
+
+  .whom__item-box {
     flex-wrap: wrap;
   }
-  .whom__item-title{
+
+  .whom__item-title {
     width: 100%;
   }
 }
@@ -654,6 +657,9 @@
     bottom: 110px;
   }
 
+  .start {
+    padding-top: 80px;
+  }
 
 
 }

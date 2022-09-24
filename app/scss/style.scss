@@ -950,7 +950,7 @@
   background-color: $dark-grey;
   margin-top: -133px;
   // padding-top: 113px;
-  padding-top: 85px;
+  padding-top: 110px;
   position: relative;
   padding-bottom: 50px;
   background-repeat: no-repeat;
@@ -971,7 +971,7 @@
 }
 
 .website__title {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .start__title-text {
@@ -1491,4 +1491,18 @@
 }
 
 // end section offer
+
+// start str policy
+.policy__title {
+  margin-bottom: 50px;
+}
+.policy__subtitle{
+  margin-bottom: 20px;
+}
+.policy__text {
+  margin-bottom: 50px;
+}
+
+// end str policy
 @import 'media';
+

@@ -1589,7 +1589,7 @@ body {
 .start {
   background-color: #292929;
   margin-top: -133px;
-  padding-top: 85px;
+  padding-top: 110px;
   position: relative;
   padding-bottom: 50px;
   background-repeat: no-repeat;
@@ -1614,7 +1614,7 @@ body {
 }
 
 .website__title {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .start__title-text {
@@ -2177,6 +2177,18 @@ body {
   color: #292929;
   text-align: center;
   text-transform: uppercase;
+}
+
+.policy__title {
+  margin-bottom: 50px;
+}
+
+.policy__subtitle {
+  margin-bottom: 20px;
+}
+
+.policy__text {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1800px) {
@@ -2838,6 +2850,10 @@ body {
   .screen__contacts {
     right: 40px;
     bottom: 110px;
+  }
+
+  .start {
+    padding-top: 80px;
   }
 }
 @media (max-width: 500px) {
