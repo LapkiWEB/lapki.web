@@ -974,6 +974,7 @@
   margin-bottom: 70px;
 }
 
+
 .start__title-text {
   @extend %Arsenal-Regular;
   font-size: 24px;
@@ -1493,16 +1494,88 @@
 // end section offer
 
 // start str policy
+.policy {
+  background-color: $dark-grey;
+  color: $light-grey;
+}
+
 .policy__title {
   margin-bottom: 50px;
+
 }
-.policy__subtitle{
+
+.policy__subtitle {
   margin-bottom: 20px;
 }
+
 .policy__text {
   margin-bottom: 50px;
 }
 
 // end str policy
-@import 'media';
 
+// start str portfolio
+.portfolio {
+  background-color: $dark-grey;
+}
+
+.portfolio__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.portfolio__item {
+  height: 415px;
+  border-radius: 5px;
+  padding: 2px;
+  &:hover {
+    @include form-style--btn;
+
+    .portfolio__bg {
+      opacity: 1;
+    }
+
+  }
+}
+
+.portfolio__background {
+  // width: 415px;
+  height: 411px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.portfolio__bg {
+  background: rgba(41, 41, 41, 0.8);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px 30px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.portfolio__bg-title {
+  @extend %Arsenal-Regular;
+  color: $white;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.portfolio__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+// end str portfolio
+@import 'media';
