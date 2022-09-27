@@ -18,13 +18,13 @@
   }
 
   .portfolio__item {
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
   }
 
-  .portfolio__background {
-    height: 346px;
-  }
+  // .portfolio__background {
+  //   height: 346px;
+  // }
 }
 
 @media(max-width: 1480px) {
@@ -157,8 +157,15 @@
     grid-row: 4;
   }
 
-  .portfolio__inner {
-    grid-template-columns: repeat(2, 1fr);
+  .portfolio__item {
+    width: 400px;
+    height: 400px;
+  }
+
+  .portfolio__item-text {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 20px;
   }
 }
 
@@ -303,11 +310,16 @@
     justify-content: flex-start;
   }
 
-  // .portfolio__inner {
-  //   grid-template-columns: repeat(1, 411px);
-  //   max-width: fit-content;
-  //   margin: 0 auto;
-  // }
+  .portfolio__item {
+    width: 330px;
+    height: 330px;
+  }
+
+  .portfolio__item-text {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 15px;
+  }
 }
 
 @media(max-width: 850px) {
@@ -553,7 +565,14 @@
   }
 
   .portfolio__inner {
-    grid-template-columns: repeat(1, 1fr);
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 20px;
+  }
+
+  .portfolio__item {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -597,6 +616,22 @@
 }
 
 // ВЕРТИКАЛЬ ВВЕРХ! ! ! ! ! !
+@media(max-width: 750px) {
+  .portfolio__inner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+
+  .portfolio__item {
+    width: 450px;
+    height: 450px;
+  }
+
+  .portfolio__item-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 
 @media(max-width: 700px) {
   .gallery__item {
@@ -687,17 +722,17 @@
     padding-top: 80px;
   }
 
-  .portfolio__item {
-    width: 300px;
-    height: 300px;
-  }
+  // .portfolio__item {
+  //   width: 300px;
+  //   height: 300px;
+  // }
 
-  .portfolio__background {
-    height: 296px;
-  }
-  .portfolio__bg {
-    padding: 50px 30px;
-  }
+  // .portfolio__background {
+  //   height: 296px;
+  // }
+  // .portfolio__bg {
+  //   padding: 50px 30px;
+  // }
 }
 
 @media(max-width: 500px) {
@@ -786,6 +821,16 @@
     width: 290px;
     height: 290px;
   }
+
+  .portfolio__item {
+    width: 300px;
+    height: 300px;
+  }
+
+  .portfolio__item-text {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 @media(max-width: 380px) {
@@ -802,16 +847,9 @@
   .stages__item-box {
     flex-wrap: wrap;
   }
+
     .portfolio__item {
-      width: 250px;
-      height: 250px;
-    }
-
-    .portfolio__background {
-      height: 246px;
-    }
-
-    .portfolio__bg {
-      padding: 30px 30px;
+      width: 270px;
+      height: 270px;
     }
 }

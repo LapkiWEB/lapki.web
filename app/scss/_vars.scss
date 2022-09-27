@@ -31,6 +31,7 @@
 @mixin form-style--btn {
   background: linear-gradient(170deg, #FFD41F 0%, #FF7B9B 100%);
 }
+
 //Старт Цветной текст заголовки?//
 @mixin form-style--text {
   color: transparent;
@@ -43,8 +44,9 @@
   border: 2px solid transparent;
   border-image: linear-gradient(to right bottom, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
   border-image-slice: 1;
- 
+
 }
+
 //Старт ховер иконки соц сетей//
 @mixin icon-style--hover {
   // border: 1px solid transparent;

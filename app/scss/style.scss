@@ -971,7 +971,7 @@
 }
 
 .website__title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 
@@ -1520,61 +1520,99 @@
 }
 
 .portfolio__inner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
   margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px 50px;
 }
 
 .portfolio__item {
-  height: 415px;
-  border-radius: 5px;
+  width: 648px;
+  height: 648px;
   padding: 2px;
-  &:hover {
-    @include form-style--btn;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include form-style--btn;
+  position: relative;
 
-    .portfolio__bg {
-      opacity: 1;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $dark-grey;
+    transition: all .5s;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0;
+    }
+    .portfolio__item-wrapper {
+      background-color: rgba(41, 41, 41, 0.9);
+      height: 100%;
     }
 
+    .portfolio__item-text {
+      opacity: 0;
+      // color: $light-grey;
+      // font-size: 28px;
+      // line-height: 32px;
+    }
+
+    .portfolio__btn {
+      opacity: 1;
+    }
   }
 }
 
-.portfolio__background {
-  // width: 415px;
-  height: 411px;
+.portfolio__item-img {
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 6px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
 }
 
-.portfolio__bg {
-  background: rgba(41, 41, 41, 0.8);
-  backdrop-filter: blur(10px);
-  width: 100%;
-  border-radius: 5px;
+.portfolio__item-wrapper {
+  transition: all .5s;
+  background: linear-gradient(0deg, #292929 0%, rgba(41, 41, 41, .1) 50%);
   height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 100px 30px;
-  opacity: 0;
-  transition: all 0.5s;
+  align-items: flex-end;
 }
 
-.portfolio__bg-title {
-  @extend %Arsenal-Regular;
-  color: $white;
-  font-size: 24px;
-  line-height: 30px;
+.portfolio__item-text {
+  font-size: 26px;
+  line-height: 32px;
+  // font-size: 36px;
+  // line-height: 46px;
   text-align: center;
+  color: $grey;
+  width: 100%;
+  padding: 0 25px 40px;
+  transition: all .5s;
 }
 
-.portfolio__wrapper {
-  display: flex;
-  justify-content: center;
+.portfolio__btn {
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+ transition: all .5s;
 }
 
 // end str portfolio
