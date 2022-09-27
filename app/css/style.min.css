@@ -1946,20 +1946,20 @@ body {
   line-height: 25px;
   color: #292929;
   margin-bottom: 30px;
-  padding-right: 47px;
-  position: relative;
   -webkit-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
-.examples__item-link::before {
-  content: "";
-  width: 32px;
-  height: 8px;
-  background-image: url("../images/icons/examples-arrow.svg");
-  position: absolute;
-  right: 0;
-  top: 12px;
+.examples__item-link svg {
+  margin-left: 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.examples__item-link svg path {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .examples__item-link:hover {
   color: transparent;
@@ -1968,27 +1968,17 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd41f), to(#ff7b9b));
   background-image: -o-linear-gradient(top, #ffd41f, #ff7b9b);
   background-image: linear-gradient(to bottom, #ffd41f, #ff7b9b);
+  color: #ffb41f;
+}
+.examples__item-link:hover svg {
+  margin-left: 20px;
+}
+.examples__item-link:hover svg path {
+  stroke: #ffb41f !important;
 }
 
 .website__item-link {
   color: #F3F3F3;
-}
-.website__item-link::before {
-  content: "";
-  width: 32px;
-  height: 8px;
-  background-image: url("../images/icons/website-arrow.svg");
-  position: absolute;
-  right: 0;
-  top: 12px;
-}
-.website__item-link:hover {
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd41f), to(#ff7b9b));
-  background-image: -o-linear-gradient(top, #ffd41f, #ff7b9b);
-  background-image: linear-gradient(to bottom, #ffd41f, #ff7b9b);
 }
 
 .whom__inner {
