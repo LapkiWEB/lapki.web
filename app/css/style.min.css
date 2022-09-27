@@ -1955,6 +1955,7 @@ body {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  margin-bottom: -2px;
 }
 .examples__item-link svg path {
   -webkit-transition: all 0.5s;
@@ -1979,6 +1980,15 @@ body {
 
 .website__item-link {
   color: #F3F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.website__item-link svg {
+  margin-bottom: -5px;
 }
 
 .whom__inner {

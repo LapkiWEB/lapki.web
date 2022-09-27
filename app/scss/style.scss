@@ -1277,7 +1277,7 @@
   svg {
     margin-left: 10px;
     transition: all .5s;
-
+    margin-bottom: -2px;
     path {
       transition: all .5s;
     }
@@ -1289,7 +1289,6 @@
 
     svg {
       margin-left: 20px;
-
       path {
         stroke: rgb(255, 180, 31) !important;
       }
@@ -1298,6 +1297,11 @@
 }
 .website__item-link {
   color: $light-grey;
+ display: flex;
+ align-items: center;
+ svg {
+   margin-bottom: -5px;
+ }
 }
 // end section examples
 
