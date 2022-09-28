@@ -1278,6 +1278,7 @@
     margin-left: 10px;
     transition: all .5s;
     margin-bottom: -2px;
+
     path {
       transition: all .5s;
     }
@@ -1289,20 +1290,24 @@
 
     svg {
       margin-left: 20px;
+
       path {
         stroke: rgb(255, 180, 31) !important;
       }
     }
   }
 }
+
 .website__item-link {
   color: $light-grey;
- display: flex;
- align-items: center;
- svg {
-   margin-bottom: -5px;
- }
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-bottom: -5px;
+  }
 }
+
 // end section examples
 
 // start section whom
@@ -1599,4 +1604,82 @@
 }
 
 // end str portfolio
+
+// start section price
+.price {
+  background-color: $light-grey;
+}
+
+.price__title {
+  @extend %Arsenal-Regular;
+  font-size: 32px;
+  line-height: 40px;
+  @include form-style--text;
+  text-transform: uppercase;
+
+}
+
+.price__subtitle {
+  @extend %Arsenal-Regular;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right bottom, rgba(255, 212, 31, 1), rgba(255, 123, 155, 1));
+  border-image-slice: 1;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.price__direction {
+  text-align: center;
+  width: 100%;
+  padding: 25px 20px;
+  background-color: $dark-grey;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.price__box {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.price__list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dashed rgba(255, 255, 255, .5);
+  margin-bottom: 20px;
+  color: $grey;
+
+  span {
+    color: $dark-grey;
+    font-size: 24px;
+    line-height: 30px;
+    transition: all .3s;
+
+
+  }
+}
+
+.price__link {
+  &:hover {
+    @include form-style--text;
+  }
+}
+
+.price__left {
+  text-transform: uppercase;
+}
+.price__right{
+  width: 160px;
+  padding-left: 15px;
+}
+// end section price
+
 @import 'media';
