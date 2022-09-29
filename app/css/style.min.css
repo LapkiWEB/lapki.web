@@ -2312,7 +2312,8 @@ body {
   transition: all 0.5s;
 }
 
-.price {
+.price,
+.estimate {
   background-color: #F3F3F3;
 }
 
