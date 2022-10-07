@@ -1686,24 +1686,21 @@
 
 // end section price
 
-// start section about-project
-.about-project {
+// start section project__about
+.project__about {
   background-color: $dark-grey;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.about-project__text {
+.project__about-text {
   color: $light-grey;
   font-size: 20px;
   line-height: 25px;
 }
 
-
-// end section about-project
-
-
+// end section project__about
 
 // start str project
 .project-start {
@@ -1716,10 +1713,12 @@
 .project__inner {
   display: flex;
 }
+
 .project__body {
   position: relative;
   z-index: 1;
 }
+
 .project__left {
   flex: 0 0 100%;
 }
@@ -1740,6 +1739,7 @@
   font-size: calc(48px + 30 * ((100vw - 1920px) / (1920 - 320)));
   line-height: calc(60px + 25 * ((100vw - 1920px) / (1920 - 320)));
 }
+
 .project__right {
   position: relative;
   flex: 0 0 60%;
@@ -1803,5 +1803,71 @@
 }
 
 // end str project
+
+// start section project__feedback
+.project__feedback {
+  background-color: $dark-grey;
+}
+.project__feedback-title{
+  margin-bottom: 50px;
+}
+.project__feedback-box {
+  font-style: italic;
+  text-align: center;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.project__feedback-text {
+  font-size: 20px;
+  line-height: 25px;
+  color: $light-grey;
+  margin-bottom: 65px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    content: '';
+    background-image: url('../images/icons/project__feedback-quotes--up.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 17px;
+    height: 18px;
+  }
+    &::before {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      content: '';
+      background-image: url('../images/icons/project__feedback-quotes--down.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 17px;
+      height: 18px;
+    }
+}
+
+.project__feedback-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 25px;
+  color: $light-grey;
+}
+
+.project__feedback-company {
+  text-transform: uppercase;
+  color: $grey;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+// end section project__feedback
+
 
 @import 'media';

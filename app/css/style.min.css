@@ -2399,14 +2399,14 @@ body {
   padding-left: 15px;
 }
 
-.about-project {
+.project__about {
   background-color: #292929;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.about-project__text {
+.project__about-text {
   color: #F3F3F3;
   font-size: 20px;
   line-height: 25px;
@@ -2530,6 +2530,69 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.project__feedback {
+  background-color: #292929;
+}
+
+.project__feedback-title {
+  margin-bottom: 50px;
+}
+
+.project__feedback-box {
+  font-style: italic;
+  text-align: center;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.project__feedback-text {
+  font-size: 20px;
+  line-height: 25px;
+  color: #F3F3F3;
+  margin-bottom: 65px;
+  position: relative;
+}
+.project__feedback-text::after {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  content: "";
+  background-image: url("../images/icons/project__feedback-quotes--up.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 17px;
+  height: 18px;
+}
+.project__feedback-text::before {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  content: "";
+  background-image: url("../images/icons/project__feedback-quotes--down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 17px;
+  height: 18px;
+}
+
+.project__feedback-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 25px;
+  color: #F3F3F3;
+}
+
+.project__feedback-company {
+  text-transform: uppercase;
+  color: #BEBEBE;
+  font-size: 15px;
+  line-height: 19px;
 }
 
 @media (max-width: 1800px) {
