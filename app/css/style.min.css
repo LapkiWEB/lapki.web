@@ -3416,7 +3416,8 @@ body {
     bottom: 110px;
   }
 
-  .start {
+  .start,
+.project-start {
     padding-top: 80px;
   }
 }
