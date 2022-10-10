@@ -1172,7 +1172,6 @@
   @extend %Arsenal-Regular;
   font-size: 24px;
   line-height: 30px;
-
   max-width: 390px;
   width: 100%;
 }
@@ -1199,7 +1198,6 @@
 .examples__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: repeat(7, 466px);
   grid-template-rows: repeat(7, 432px);
   gap: 100px 20px;
   margin-bottom: 50px;
@@ -1208,7 +1206,6 @@
 .website__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: repeat(7, 466px);
   grid-template-rows: repeat(3, 432px);
   gap: 100px 20px;
   margin-bottom: 50px;
@@ -1601,7 +1598,6 @@
 .portfolio__btn {
   opacity: 0;
   position: absolute;
-  // top: 45%;
   bottom: 40px;
   transition: all .5s;
 }
@@ -1871,5 +1867,27 @@
 
 // end section project__feedback
 
+// start section contacts
+.contacts__inner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.contacts__text{
+ font-size: 20px;
+ line-height: 25px;
+ color: $light-grey;
+ margin-bottom: 30px;
+}
+.contacts__map{
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__cat {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+// end section contacts
 
 @import 'media';
